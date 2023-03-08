@@ -13,6 +13,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -22,6 +23,7 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -43,6 +45,7 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
@@ -51,6 +54,7 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+
 /*==================== SHOW SCROLL TOP ====================*/ 
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
@@ -58,6 +62,7 @@ function scrollTop(){
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
@@ -88,6 +93,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
