@@ -1,4 +1,5 @@
 /*==================== SHOW MENU ====================*/
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -15,6 +16,7 @@ showMenu('nav-toggle','nav-menu')
 
 
 /*==================== REMOVE MENU MOBILE ====================*/
+
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -26,6 +28,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -47,6 +50,7 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
+
 function scrollHeader(){
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
@@ -56,6 +60,7 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*==================== SHOW SCROLL TOP ====================*/ 
+
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -65,6 +70,7 @@ window.addEventListener('scroll', scrollTop)
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
+
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
@@ -96,6 +102,7 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
